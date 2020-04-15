@@ -9,7 +9,8 @@ class QrByte {
   final List<int> _data;
 
   factory QrByte(String input) {
-    final charUnits = utf8.encode(input);
+//     final charUnits = utf8.encode(input);
+    final charUnits = input.codeUnits
 
     return QrByte._internal(charUnits);
   }
